@@ -1,36 +1,44 @@
-## 项目简介
+# Project Overview
 
-这是一个基于Spring Boot的联系人管理API，旨在提供基本的CRUD操作，以便用户可以轻松添加、修改、删除和查询联系人信息。项目使用JPA与MySQL数据库进行数据存储和操作。
+This is a contact management API based on Spring Boot, designed to provide basic CRUD operations, allowing users to easily add, modify, delete, and query contact information. The project uses JPA with a MySQL database for data storage and operations.
 
-## 功能特性
+## Features
 
-- **添加联系人**：支持通过POST请求添加新联系人。
-- **修改联系人**：支持通过PUT请求修改现有联系人的信息。
-- **删除联系人**：支持通过DELETE请求删除指定联系人。
-- **获取所有联系人**：支持通过GET请求获取所有联系人的列表。
-- **根据ID获取联系人**：支持通过GET请求根据ID查询特定联系人。
+- **Add Contact**: Supports adding new contacts via POST requests.
+- **Modify Contact**: Supports modifying existing contact information via PUT requests.
+- **Delete Contact**: Supports deleting specified contacts via DELETE requests.
+- **Get All Contacts**: Supports retrieving a list of all contacts via GET requests.
+- **Get Contact by ID**: Supports querying a specific contact by ID via GET requests.
 
-## 技术栈
+## Technology Stack
 
-- **Java**：后端开发语言。
-- **Spring Boot**：用于构建RESTful API。
-- **Spring Data JPA**：用于数据库操作。
-- **MySQL**：关系型数据库管理系统。
-- **Maven**：项目管理和构建工具。
+- **Java**: Backend development language.
+- **Spring Boot**: Used to build the RESTful API.
+- **Spring Data JPA**: For database operations.
+- **MySQL**: Relational database management system.
+- **Maven**: Project management and build tool.
 
-## API 端点
+## API Endpoints
 
-| 方法                                                         | 路径                        | 描述             |
-| ------------------------------------------------------------ | --------------------------- | ---------------- |
-| POST                                                         | `/api/contacts/add`         | 添加联系人       |
-| PUT                                                          | `/api/contacts/modify/{id}` | 修改联系人       |
-| DELETE                                                       | `/api/contacts/delete/{id}` | 删除联系人       |
-| GET                                                          | `/api/contacts/all`         | 获取所有联系人   |
-| GET                                                          | `/api/contacts/{id}`        | 根据ID获取联系人 |
-| 配置数据库： 在src/main/resources/application.properties文件中配置MySQL数据库连接信息： |                             |                  |
-| spring.datasource.url=jdbc:mysql://localhost:3306/<数据库名> |                             |                  |
-| spring.datasource.username=<用户名>                          |                             |                  |
-| spring.datasource.password=<密码>                            |                             |                  |
-| spring.jpa.hibernate.ddl-auto=update                         |                             |                  |
+| Method | Path                      | Description       |
+| ------ | ------------------------- | ----------------- |
+| POST   | /api/contacts/add         | Add contact       |
+| PUT    | /api/contacts/modify/{id} | Modify contact    |
+| DELETE | /api/contacts/delete/{id} | Delete contact    |
+| GET    | /api/contacts/all         | Get all contacts  |
+| GET    | /api/contacts/{id}        | Get contact by ID |
 
-测试API： 使用Postman或任何API测试工具测试API端点
+## Database Configuration
+
+Configure the MySQL database connection information in the `src/main/resources/application.properties` file:
+
+```
+php复制代码spring.datasource.url=jdbc:mysql://localhost:3306/<database-name>
+spring.datasource.username=<username>
+spring.datasource.password=<password>
+spring.jpa.hibernate.ddl-auto=update
+```
+
+## Testing the API
+
+Use Postman or any API testing tool to test the API endpoints.
