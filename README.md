@@ -18,25 +18,6 @@
 - **MySQL**：关系型数据库管理系统。
 - **Maven**：项目管理和构建工具。
 
-## 项目结构
-
-src
-├── main
-│   ├── java
-│   │   └── com
-│   │       └── sty
-│   │           ├── controller
-│   │           │   └── ContactController.java
-│   │           ├── entity
-│   │           │   └── Contact.java
-│   │           ├── repository
-│   │           │   └── ContactRepository.java
-│   │           └── service
-│   │               └── ContactService.java
-│   └── resources
-│       ├── application.properties
-└── test
-
 ## API 端点
 
 | 方法                                                         | 路径                        | 描述             |
